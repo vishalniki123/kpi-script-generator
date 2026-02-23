@@ -1,0 +1,128 @@
+/* BASE */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #121417;
+    color: #e6e6e6;
+}
+
+/* LAYOUT */
+.app-container {
+    min-height: 100vh;
+}
+
+/* HEADER */
+.app-header {
+    padding: 24px 40px;
+    border-bottom: 1px solid #2a2e33;
+}
+
+.header-subtitle {
+    color: #9aa0a6;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+/* FORM */
+.form-container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.form-section {
+    background-color: #1a1d21;
+    border: 1px solid #2a2e33;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-section h5 {
+    margin-bottom: 10px;
+}
+
+.help-text {
+    font-size: 0.85rem;
+    color: #9aa0a6;
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+button.btn-primary {
+    padding: 14px;
+    font-size: 1.05rem;
+}
+
+/* LOADING */
+#loadingOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-box {
+    background-color: #1a1d21;
+    border: 1px solid #2a2e33;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* FILE LIST */
+ul {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* ===== FIX BOOTSTRAP MODAL FOR DARK UI ===== */
+
+/* Modal background */
+.modal-content {
+    background-color: #1a1d21 !important;
+    color: #e6e6e6 !important;
+    border: 1px solid #2a2e33;
+}
+
+/* Modal headings */
+.modal-content h5,
+.modal-content h6 {
+    color: #ffffff;
+}
+
+/* Modal divider */
+.modal-content hr {
+    border-color: #2a2e33;
+}
+
+/* File list */
+.modal-content ul {
+    padding-left: 18px;
+}
+
+.modal-content ul li {
+    font-size: 0.85rem;
+    color: #cfd3d7;
+    margin-bottom: 4px;
+}
+
+/* Scrollbar for file list */
+.modal-content ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content ul::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 3px;
+}
+
+/* Download button */
+.modal-content .btn-success {
+    background-color: #198754;
+    border-color: #198754;
+    color: #ffffff;
+}
